@@ -68,6 +68,10 @@ body {
 
 /****** Hebergements ***********/
 .hebergements {
+    display: flex;
+    flex-direction: flex-wrap;
+    
+    
     width: 65%;
 }
 
