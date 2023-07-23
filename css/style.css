@@ -9,6 +9,26 @@
     --filter-bg-color: #DEEBFF;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between; /* logo et nav ver 2 côté */
+}
+
+button {
+    font-size: 1.5em;
+    background-color: transparent;
+    border: 2px solid blue; /* bordure du button */
+    border-width: 0;
+    height: 50px;
+    transition: border-width 0.3s; /* ajouter un effet de transition */
+    margin-right: 30px; /*Ajoute un espace de 30px à droite de chaque bouton Cet espace n'est pas visible à droite du dernier bouton car il n'y a pas d'autres éléments au même niveau à sa droite.*/
+}
+
+button:hover {
+    border-width: 2px 0 0 0; /* afficher les bordures uniquement en haut lorsque la souris est survolée */
+}
+
+
 .fa-solid {
     color: var(--main-color);
 }
@@ -84,7 +104,6 @@ body {
     display: inline-flex;
     flex-direction: column;
     margin-top: 33px;
-  
 }
 
 .hebergements-cards img {
