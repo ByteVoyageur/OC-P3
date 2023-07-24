@@ -31,6 +31,22 @@ button:hover {
 /********** Seach form start ************/
 
 .search-form {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center; /* permet au formulaire de ne prendre que l'espace nécessaire pour son contenu */
+    border: 1px solid gray;
+    border-radius:10px;
+    margin: 0;
+    padding: 100;
+}
+
+.search-input::placeholder {
+    font-weight: normal;  /* Make the placeholder text normal weight */
+    font-size: 1em;  /* Make the placeholder text the same size as the button text */
+}
+
+
+.input-container {
     display: flex;
     align-items: center;
 }
@@ -42,24 +58,33 @@ button:hover {
 .search-box::before {
     content: "";
     display: inline-block;
-    height: 1em;
     width: 1em;
+    height: 1em;
     background-image: url('/images/icon/location-dot-solid.svg');
     background-size: contain;
-    background-color: lightgray;
     background-repeat: no-repeat;
     position: absolute;
-    left: 10px;  /* Position the icon 10px from the left edge of the div */
-    top: 50%;    /* Position the icon in the middle of the div vertically */
+    left: 20px;  /* Position the icon 20px from the left edge of the input */
+    top: 50%;    /* Position the icon in the middle of the input vertically */
     transform: translateY(-50%);  /* Center the icon vertically */
+    background-color: #F2F2F2;
 }
+
 
 .search-input {
     padding-left: 50px;  /* Add some space for the icon */
+    border: none;
 }
 
-
+.search-button {
+    background-color: #0065FC;
+    color: white;
+    margin: 0;
+    padding: 20;
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
 }
+
 
 
 /********** Seach form end ************/
