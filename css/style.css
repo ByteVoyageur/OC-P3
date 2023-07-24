@@ -28,6 +28,41 @@ button:hover {
     border-width: 2px 0 0 0; /* afficher les bordures uniquement en haut lorsque la souris est survolée */
 }
 
+/********** Seach form start ************/
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box::before {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-image: url('/images/icon/location-dot-solid.svg');
+    background-size: contain;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 10px;  /* Position the icon 10px from the left edge of the div */
+    top: 50%;    /* Position the icon in the middle of the div vertically */
+    transform: translateY(-50%);  /* Center the icon vertically */
+}
+
+.search-input {
+    padding-left: 50px;  /* Add some space for the icon */
+}
+
+
+}
+
+
+/********** Seach form end ************/
 
 .fa-solid {
     color: var(--main-color);
