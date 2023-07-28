@@ -13,20 +13,39 @@
     display: flex;
     justify-content: space-between; /* logo et nav ver 2 côté */
 }
+/****************************************/
 
-button {
-    font-size: 1.5em;
-    background-color: transparent;
-    border: 2px solid blue; /* bordure du button */
-    border-width: 0;
-    height: 50px;
-    transition: border-width 0.3s; /* ajouter un effet de transition */
-    margin-right: 30px; /*Ajoute un espace de 30px à droite de chaque bouton Cet espace n'est pas visible à droite du dernier bouton car il n'y a pas d'autres éléments au même niveau à sa droite.*/
+a{
+    text-decoration: none;
 }
 
-button:hover {
-    border-width: 2px 0 0 0; /* afficher les bordures uniquement en haut lorsque la souris est survolée */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-hebergement {
+    border: none;
+    transition:  border 0.3s ease;
+    margin-right: 20px;   /* Add right margin to the first button */
+}
+
+.button-activite {
+    border: none;
+    transition: border 0.3s ease;
+}
+
+.button-hebergement:hover, .button-activite:hover {
+    border-top: 2px solid blue;
+}
+
 
 /********** Seach form start ************/
 
@@ -37,7 +56,6 @@ button:hover {
     border: 1px solid gray;
     border-radius:10px;
     margin: 0;
-    padding: 100;
 }
 
 .search-input::placeholder {
@@ -80,7 +98,7 @@ button:hover {
     background-color: #0065FC;
     color: white;
     margin: 0;
-    padding: 20;
+    padding: 10px;
     border-top-right-radius:10px;
     border-bottom-right-radius: 10px;
 }
@@ -151,6 +169,12 @@ body {
     width: 65%;
 }
 
+.hebergements-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .hebergements-title {
     display: flex;
@@ -161,7 +185,7 @@ body {
 .hebergements-cards .card {
     height: 200px;
     width: 250px;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     margin-top: 33px;
 }
