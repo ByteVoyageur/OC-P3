@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between; /* logo et nav ver 2 côté */
 }
+
 /****************************************/
 
 a{
@@ -47,66 +48,57 @@ nav{
 }
 
 
-/********** Seach form start ************/
-
-.search-form {
-    display: inline-flex;
+/********** Seach form ************/
+.search-form{
+    display:inline-flex;
     justify-content: space-between;
-    align-items: center; /* permet au formulaire de ne prendre que l'espace nécessaire pour son contenu */
-    border: 1px solid gray;
-    border-radius:10px;
-    margin: 0;
 }
 
-.search-input::placeholder {
-    font-weight: normal;  /* Make the placeholder text normal weight */
-    font-size: 1em;  /* Make the placeholder text the same size as the button text */
+/********** Filter Bar ************/
+
+.filtres-bar {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .filter-button {
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 2px solid #cccccc; 
+    padding: 10px 20px; 
+    margin: 5px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease; 
+  }
+
+  .filter-button i{
+    margin-right: 10px;
 }
 
+  .filter-button:hover {
+    background-color: #819aeb; 
+  }
+  
 
-.input-container {
+  .info-bar {
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
-.search-box {
-    position: relative;
-}
-
-.search-box::before {
-    content: "";
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    background-image: url('/images/icon/location-dot-solid.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 20px;  /* Position the icon 20px from the left edge of the input */
-    top: 50%;    /* Position the icon in the middle of the input vertically */
-    transform: translateY(-50%);  /* Center the icon vertically */
-    background-color: #F2F2F2;
+.icon-container {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;  /* 添加间距 */
 }
 
 
-.search-input {
-    padding-left: 50px;  /* Add some space for the icon */
-    border: none;
-}
-
-.search-button {
-    background-color: #0065FC;
-    color: white;
-    margin: 0;
-    padding: 10px;
-    border-top-right-radius:10px;
-    border-bottom-right-radius: 10px;
-}
-
-
-
-/********** Seach form end ************/
-
+/**********  ************/
 .fa-solid {
     color: var(--main-color);
 }
@@ -117,6 +109,9 @@ body {
 }
 
 .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
@@ -263,7 +258,21 @@ body {
     margin-bottom: 5px;
 }
 
+/******************************/
 
+.activites{
+
+}
+
+.activites-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.activites .card {
+    width: 22%;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
