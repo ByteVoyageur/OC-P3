@@ -14,6 +14,13 @@
     justify-content: space-between; /* logo et nav ver 2 côté */
 }
 
+.header img{
+    width: 61.09px;
+    height: 19px;
+    margin-top: 30px;
+
+}
+
 /****************************************/
 
 a{
@@ -94,7 +101,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;  /* 添加间距 */
+    margin-right: 10px;
 }
 
 
@@ -260,8 +267,8 @@ body {
 
 /******************************/
 
-.activites{
-
+.activites .activites-title{
+    padding: 20px;
 }
 
 .activites-cards{
@@ -271,9 +278,31 @@ body {
 }
 
 .activites .card {
-    width: 22%;
+    width: 297.5px;
+    height: 439px;
+    border-radius: 20px;
+    padding: 0;
 }
 
+.activites-cards img {
+    width: 297px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites .card-title{
+    margin-left: 20px;
+}
+
+/************************* footer *************************************/
+
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
