@@ -9,15 +9,20 @@
     --filter-bg-color: #DEEBFF;
 }
 
+a {
+    color: #000000;
+}
+
 .header {
     display: flex;
-    justify-content: space-between; /* logo et nav ver 2 côté */
+    justify-content: space-between;
 }
 
 .header img{
     width: 61.09px;
     height: 19px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 
 }
 
@@ -57,8 +62,41 @@ nav{
 
 /********** Seach form ************/
 .search-form{
+    width: 377px;
+    height: 49px;
+    border: 1px solid;
+    border-color: #F2F2F2;
+    border-radius: 15px;
     display:inline-flex;
     justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-form i{
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: #000000;
+}
+
+.search-form input{
+    border: none;
+}
+
+.search-form button{
+    border: none;
+    width: 132px;
+    height: 49px;
+    background-color: #0065FC;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 /********** Filter Bar ************/
@@ -83,7 +121,7 @@ nav{
 }
 
   .filter-button:hover {
-    background-color: #819aeb; 
+    background-color: #DEEBFF; 
   }
   
 
@@ -121,8 +159,9 @@ body {
     justify-content: center;
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 30px 50px;
     box-sizing: border-box;
+    gap: 20px;
 }
 
 .section-title {
@@ -176,6 +215,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .hebergements-title {
@@ -298,11 +338,41 @@ body {
 /************************* footer *************************************/
 
 footer{
+    width: 1126px;
+    height: 163px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start
 }
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+footer li{
+    font-size: small;
+    color: #d9d9d9;
+}
+
+footer h3, footer li{
+    margin: 0;
+}
+
+footer div{
+    width: 375.33px;
+    height: 163px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer li a {
+    color: #9d9a9a; 
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
