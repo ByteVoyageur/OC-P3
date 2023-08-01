@@ -11,9 +11,11 @@
 
 a {
     color: #000000;
+    text-decoration: none;
 }
 
 .header {
+    height: 79px;
     display: flex;
     justify-content: space-between;
 }
@@ -29,10 +31,12 @@ a {
 /****************************************/
 
 a{
-    text-decoration: none;
+    
 }
 
 nav{
+    width: 244px;
+    height: 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,12 +49,16 @@ nav{
 }
 
 .button-hebergement {
+    width: 113px;
+    height: 35px;
     border: none;
     transition:  border 0.3s ease;
     margin-right: 20px;   /* Add right margin to the first button */
 }
 
 .button-activite {
+    width: 63px;
+    height: 35px;
     border: none;
     transition: border 0.3s ease;
 }
@@ -159,7 +167,6 @@ body {
     justify-content: center;
     width: 100%;
     max-width: 1440px;
-    padding: 30px 50px;
     box-sizing: border-box;
     gap: 20px;
 }
