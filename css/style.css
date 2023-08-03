@@ -117,6 +117,10 @@ p{
     border-bottom-right-radius: 15px;
 }
 
+.search-form input:focus{
+    outline-color: white;
+}
+
 /********** Filter Bar ************/
 
 .filtres-bar {
