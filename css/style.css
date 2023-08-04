@@ -421,6 +421,8 @@ footer{
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
+        width: 924px;
+        height: 913.5px;        
         flex-direction: column;
     }
 
@@ -449,6 +451,28 @@ footer{
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites {
+        width: 90vw;
+        margin-bottom: -100px;
+    }
+
+    .activites .card {
+        width: 100%;
+        height: 270px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .activites .card{
+        width: 24%;
+        box-sizing: border-box;
+    }
+
+    .activites img{
+        max-width: 100%;
+        height: 270px;
     }
 }
 
