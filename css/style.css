@@ -129,6 +129,11 @@ p{
     margin-top: -10px;
 }
 
+.filter-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
 .filter-button {
     display: flex;
     flex-direction: row;
@@ -142,6 +147,7 @@ p{
     font-size: 1em; 
     font-weight: bold;  
 }
+
 
 #economique{
     width: 173px;
@@ -420,6 +426,22 @@ footer{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    
+    .button {
+        padding-right: 50px;
+    }
+
+
+    ::placeholder{
+        font-size: larger;
+        font-weight: 600;
+    }
+
+    .filtres-bar{
+        
+    }
+
+    
     .hebergements-and-populaires {
         width: 924px;
         height: 913.5px;        
