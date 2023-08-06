@@ -529,5 +529,34 @@ footer{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    .header .button{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button-hebergement:hover, .button-activite:hover {
+        border-bottom: 2px solid blue;
+        border-top: none;
+    }
+
+    h1{
+        word-break: break-all;
+        width: 350px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .p-h1 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
