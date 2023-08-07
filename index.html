@@ -32,7 +32,7 @@
             <p class="p-h1">En plein centre-ville ou en pleine nature</p>
             
             <form action="" class="search-form">
-                <i class="fa-solid fa-location-dot location-icon"></i>
+                <i class="fa-solid fa-location-dot location-icon fa-lg"></i>
                 <input type="text" name="search" placeholder="Marseille, France" class="search-input">
                 <button type="text" class="search-button">
                     <i class="fa-solid fa-magnifying-glass mobile-search-icon"></i>
@@ -40,21 +40,25 @@
             </form>
             
             <div class="filtres-bar">
-                    <div class="filtres-title">
-                        <h3>Filtres</h3>
+                <div class="filtres-title">
+                    <h3>Filtres</h3>
+                </div>
+                <div class="filter-buttons">
+                    <div class="filter-button-row">
+                        <button class="filter-button" id="economique"><i class="fa-solid fa-money-bill-wave fa-lg"></i>Economique</button>
+                        <button class="filter-button" id="familial"><i class="fa-solid fa-people-group fa-lg"></i>Familial</button>
                     </div>
-                    <div class="filter-buttons">
-                        <button class="filter-button" id="economique"><i class="fa-solid fa-money-bill-wave"></i>Economique</button>
-                        <button class="filter-button" id="familial"><i class="fa-solid fa-people-group"></i>Familial</button>
-                        <button class="filter-button" id="romantique"><i class="fa-solid fa-heart"></i>Romantique</button>
-                        <button class="filter-button" id="pepites"><i class="fa-solid fa-fire"></i>Nos pepites</button>
+                    <div class="filter-button-row">
+                        <button class="filter-button" id="romantique"><i class="fa-solid fa-heart fa-lg"></i>Romantique</button>
+                        <button class="filter-button" id="pepites"><i class="fa-solid fa-fire fa-lg"></i>Nos pepites</button>
+                    </div>
                 </div>
             </div>
             <div class="info-bar">
                 <div class="icon-container">
                     <i class="fa-solid fa-info fa-xs"></i>
                 </div>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                <p>Plus de 500 logements sont disponibles<span class="break"> dans cette ville</span></p>
             </div>
             <div class="hebergements-and-populaires" id="ancre-hebergements">
                 <section class="hebergements">
@@ -191,7 +195,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="card">
+                        <article class="card" id="populaires-cards-2">
                             <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -208,7 +212,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="card">
+                        <article class="card" id="populaires-cards-3">
                             <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
