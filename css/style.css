@@ -168,13 +168,13 @@ p{
 
 
 #economique{
-    width: 173px;
+    width: 170px;
     height: 50px;
     padding: 4px 19px 4px 19px;
 }
 
 #familial{
-    width: 134px;
+    width: 135px;
     height: 50px;
     padding: 4px 19px 4px 19px;
 }
@@ -186,7 +186,7 @@ p{
 }
 
 #pepites{
-    width: 167px;
+    width: 170px;
     height: 50px;
     padding: 4px 19px 4px 19px;
 }
@@ -446,7 +446,7 @@ footer{
    margin-left: 220px;
 }
 
-#assistance{
+#footer-assistance{
    margin-left: 270px;
 }
 
@@ -457,11 +457,11 @@ footer{
 @media (max-width: 1024px) {
     
     .main-container{
-        margin: 0 0 0 75px;
+        margin: 0 0 0 35px;
     }
     
     .button {
-        padding-right: 50px;
+        padding-right: 20px;
     }
 
     .filtres-bar{
@@ -526,6 +526,7 @@ footer{
     }
 
     footer{
+        width: 924px;
         margin-top: -65px;
     }
 
@@ -546,6 +547,12 @@ footer{
         margin-right: -15px;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .header{
         display: flex;
         flex-direction: column;
@@ -559,13 +566,11 @@ footer{
     }
         
     .header .button{
-        display: flex;
-        flex-direction: row;
         padding-right: 0;
         margin-top: -15px;
     }
 
-        .button-hebergement:hover, .button-activite:hover {
+    .button-hebergement:hover, .button-activite:hover {
         border-bottom: 2px solid #0065FC;
         border-top: none;
     }
@@ -584,6 +589,7 @@ footer{
         word-break: break-all;
         width: 350px;
         text-align: center;
+        /* justify-content: center;*/
     }
 
     .p-h1 {
@@ -596,6 +602,7 @@ footer{
         width: 340px;
         margin-left: 25px;
         margin-top: 10px;
+        text-align: center;
     }
 
 
@@ -623,9 +630,12 @@ footer{
     }
 
     .filter-buttons {
-        display: flex;
         flex-direction: column;
         margin-left: 0;
+    }
+
+    #familial {
+        width: 170px;
     }
 
     .filtres-bar h3 {
@@ -649,7 +659,7 @@ footer{
 /***************************************/
     .hebergements-and-populaires {
         width: 375px;
-        height: 2020px;
+        height:auto;
         display: flex;
         flex-direction: column;
     }
@@ -678,7 +688,6 @@ footer{
         display: flex;
         flex-direction: column;
         margin-top: -10px;
-        padding-bottom: 0;
     }
 
     .populaires-cards .card {
@@ -692,7 +701,7 @@ footer{
 
     .hebergements {
         width: 375px;
-        height: 1435.5px;
+        height: auto;
     }
 
     .hebergements-cards .card {
@@ -700,6 +709,45 @@ footer{
         height: 208px;
     }
 
+    .hebergements-cards img {
+        width: 335px;
+        height: 124px;
+    }
 
+    .activites {
+        height: auto;
+    }
+
+    .activites-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activites-cards .card {
+        width: 315px;
+        height: 200px;
+    }
+
+    .activites-cards img {
+        width: 315px;
+        height: 141px;
+    }
+
+    footer {
+        width: 375px;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 150px;
+    }
+
+    #footer-hebergement {
+        margin-left: 0;
+    }
+
+    #footer-assistance {
+        margin-left: 0;
+    }
 
 }
