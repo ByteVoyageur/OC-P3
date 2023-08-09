@@ -8,10 +8,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
-    margin-left: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 * {
@@ -262,7 +262,7 @@ p{
 
 /****** Hebergements And Populaires ************************/
 .hebergements-and-populaires {
-    width: 1340px;
+    width: 98%;
     height: 614px;
     display: flex;
     justify-content: space-between;
@@ -277,7 +277,7 @@ p{
 
 /****** Hebergements ************************************/
 .hebergements {
-    width: 871px;
+    width: 66%;
     height: 614px;
 }
 
@@ -298,7 +298,7 @@ p{
 
 .hebergements-cards .card {
     height: 210px;
-    width: 257px;
+    width: 32%;
     display: flex;
     flex-direction: column;
     margin-top: 33px;
@@ -306,7 +306,7 @@ p{
 }
 
 .hebergements-cards img {
-    width: 250.33px;
+    width: 98%;
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -388,8 +388,6 @@ p{
 /******************************/
 
 .activites{
-    width: 1340px;
-    height: 559px;
     margin-top: 50px;
 }
 
@@ -408,6 +406,7 @@ p{
     height: 439px;
     border-radius: 20px;
     padding: 0;
+    margin-left: 15px;
 }
 
 .activites-cards img {
@@ -424,17 +423,15 @@ p{
 /************************* footer *************************************/
 footer{
     background-color: #F2F2F2;
-    width: 1340px;
-    height: 163px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 .footer{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 20px 20px 50px;
     gap: 15px;
 }
 
@@ -442,24 +439,11 @@ footer{
     margin-bottom: 0px;
 }
 
-#footer-hebergement{
-   margin-left: 220px;
-}
-
-#footer-assistance{
-   margin-left: 150px;
-}
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    
-    .main-container{
-        margin: 0 0 0 35px;
-    }
-    
     .button {
         padding-right: 20px;
     }
@@ -476,9 +460,10 @@ footer{
 
     
     .hebergements-and-populaires {
-        width: 924px;
         height: 913.5px;        
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .hebergements {
@@ -508,10 +493,6 @@ footer{
         font-size: 13px;
     }
 
-    .activites {
-        width: 90vw;
-        margin-bottom: -100px;
-    }
 
     .activites .card {
         width: 195px;
@@ -525,26 +506,12 @@ footer{
         height: 200px;
     }
 
-    footer{
-        width: 924px;
-        margin-top: -65px;
-    }
-
-    #footer-hebergement{
-        margin-left: 90px;
-    }
-
-    #assistance{
-        margin-left: 130px;
-    }
-
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
     .main-container {
-        margin-right: 40px;
         align-items: center;
     }
 
@@ -569,16 +536,12 @@ footer{
     .header .button{
         /* padding-right: 0; */
         margin-top: -15px;
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
 
     .button-hebergement:hover, .button-activite:hover {
         border-bottom: 2px solid #0065FC;
         border-top: none;
-    }
-
-    nav {
-        margin-left: -110px;
     }
 
     .button-activite {
@@ -753,23 +716,11 @@ footer{
     }
 
     footer {
-        width: 375px;
-        height: auto;
+        width: 100%;
+        padding: 0;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-top: 170px;
-        margin-left: 15px;
-    }
-
-    #footer-hebergement {
-        margin-top: -10px;
-        margin-left: 0;
-    }
-
-    #footer-assistance {
-        margin-top: -5px;
-        margin-left: 0;
     }
 
 }
