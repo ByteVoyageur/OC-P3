@@ -84,13 +84,13 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 7px;
+    padding-top: 10px;
+    gap: 50px;
 }
 
 .button-hebergement {
     border: none;
     transition:  border 0.3s ease;
-    margin-right: 68px; 
 }
 
 .button-activite {
@@ -107,10 +107,6 @@ a {
 
 h1{
     font-size: 26px;
-}
-
-.mobile-break {
-    display: none;
 }
 
 p{
