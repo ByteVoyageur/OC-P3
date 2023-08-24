@@ -124,9 +124,12 @@ p {
   margin-top: 18px;
 }
 
-::placeholder {
+.search-input {
   font-size: larger;
-  font-weight: 600;
+  font-weight: 500;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .search-button::before {
@@ -201,7 +204,6 @@ p {
   height: 50px;
   padding: 4px 19px 4px 19px;
 }
-/*************************************************************/
 
 .filter-button i {
   margin-right: 10px;
@@ -228,8 +230,6 @@ p {
   justify-content: center;
   margin-right: 10px;
 }
-
-/**********  **********************************************************/
 
 /****** Hebergements And Populaires ************************/
 .hebergements-and-populaires {
