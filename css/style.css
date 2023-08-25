@@ -184,11 +184,6 @@ p {
   align-items: center;
 }
 
-.filter-button-row {
-  display: flex;
-  flex-direction: row;
-}
-
 .filter-button {
   display: flex;
   flex-direction: row;
